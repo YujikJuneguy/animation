@@ -1,0 +1,35 @@
+.light {
+   margin: 10px auto;
+   background-color: rgb(3, 15, 24);
+   width: 100px;
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   border-radius: 10px;
+   
+   
+}
+.light div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    font-family: sans-serif;
+    
+    }
+.light div:first-child {
+    background-color: red;
+}
+.light div:nth-child(2) {
+    background-color: yellow;
+}
+.light div:last-child {
+    background-color: green;}
+
+div img {
+    rotate(Y): 30deg;
+}
