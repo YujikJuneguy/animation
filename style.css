@@ -22,9 +22,9 @@
    flex-direction: column;
    justify-content: space-around;
    border-radius: 10px;
-   transform: skewY(-5deg) rotateY(10deg)  
-   
+   transform: skewY(-5deg) rotateY(10deg); 
 }
+
 .light {
     width: 60px;
     height: 60px;
@@ -43,15 +43,37 @@
         height: 60px;
         border-radius: 50%;
         background-color: red;
-    
-    }
- 
-    .green {
+        animation-name: stop;
+        animation-duration: 2s;
+        }
+        @keyframes stop {
+            0%{
+                background-color: rgb(92, 91, 91);
+            }
+            32% {
+                background-color: rgb(92, 91, 91);
+            }
+            30% {
+                background-color: red;
+            }
+        }
+     .green {
         width: 60px;
         height: 60px;
         border-radius: 50%;
         background-color: rgb(27, 139, 27);
+        animation: go 5s linear;
     }
+         @keyframes go {
+            from{
+                background-color: rgb(92, 91, 91);
+                
+            }
+            to{
+                background-color: rgb(92, 91, 91);
+            }
+            
+         }
  
 .road {
     width: 100%;
@@ -73,7 +95,7 @@
 .cats {
     /* margin-top: -20px; */
     position: absolute;
-    animation: mochipeach 6s linear infinite;
+    animation: mochipeach 10s linear forwards;
     z-index: 1;
     bottom: 200px;
    
@@ -89,7 +111,7 @@
     /* transform: rotate3d(80deg);
     transform: rotateZ(70deg); */
     position: absolute;
-    top: 240px;
+    top: 200px;
     right: 720px;
  
 }
