@@ -1,16 +1,31 @@
-.light {
-   margin: 10px auto;
-   background-color: rgb(3, 15, 24);
-   width: 100px;
-   height: 250px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sky {
+    width: 100%;
+    background-color: rgb(23, 192, 239);
+    height:300px;
+    }
+.grass {
+    margin-top: -120px;
+    background-color: rgb(13, 234, 76);
+    height:290px;
+    }
+.lights {
+   margin: -350px auto 80px;
+   background-color: rgb(2, 24, 41);
+   width: 80px;
+   height: 160px;
    display: flex;
    flex-direction: column;
    justify-content: space-around;
    border-radius: 10px;
-   
+   transform: skewY(-5deg) rotateY(10deg)  
    
 }
-.light div {
+.light {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -19,17 +34,62 @@
     margin: 0 auto;
     align-items: center;
     font-family: sans-serif;
+    background-color: rgb(92, 91, 91);   
+    box-shadow: 0px 0px 10px rgb(50, 50, 50) ; 
     
     }
-.light div:first-child {
-    background-color: red;
-}
-.light div:nth-child(2) {
-    background-color: yellow;
-}
-.light div:last-child {
-    background-color: green;}
+    .red {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: red;
+    
+    }
+ 
+    .green {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: rgb(27, 139, 27);
+    }
+ 
+.road {
+    width: 100%;
+    background-color: grey;
+    height:200px;
+    margin-top: 60px;
+    position: relative;
+    transform: skewY(-4deg) rotateY(6deg)
 
-div img {
-    rotate(Y): 30deg;
+}
+.line {
+    border: 7px dashed white;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 88px;
+    bottom: 63px;
+}
+.cats {
+    /* margin-top: -20px; */
+    position: absolute;
+    animation: mochipeach 6s linear infinite;
+    z-index: 1;
+    bottom: 200px;
+   
+}
+@keyframes mochipeach {
+    from {right:  0;}
+    to {right: 90%;}
+    }
+.border {
+    width: 300px;
+    height: 200px;
+    margin: 5px auto;
+    /* transform: rotate3d(80deg);
+    transform: rotateZ(70deg); */
+    position: absolute;
+    top: 240px;
+    right: 720px;
+ 
 }
